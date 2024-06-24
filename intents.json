@@ -1,0 +1,226 @@
+{
+  "intents": [
+    {
+      "tag": "salutations",
+      "patterns": [
+        "Salut",
+        "Bonjour",
+        "Comment ça va ?",
+        "coucou",
+        "Hello",
+        "Hey"
+      ],
+      "responses": [
+        "Salut:-)",
+        "Salut ! comment puis-je vous aider dans votre orientation?",
+        "Salut ! En quoi puis-je vous assister pour votre orientation  ?",
+        "Coucou ! Que puis-je faire pour vous en tant que bachelier ou etudiant ?",
+        "Hello ! Comment puis-je vous aider aujourd'hui dans votre projet d'etude ?"
+      ]
+    },
+    {
+      "tag": "Au_revoir",
+      "patterns": ["Au revoir", "A bientôt", "À la prochaine", "Bye"],
+      "responses": [
+        "Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions.",
+        "À bientôt ! Si vous avez besoin d'aide, je suis là.",
+        "À la prochaine ! Passez une bonne journée.",
+        "Bye ! N'hésitez pas à revenir si vous avez besoin d'aide."
+      ]
+    },
+    {
+      "tag": "Merci",
+      "patterns": [
+        "Merci",
+        "Merci beaucoup",
+        "C'est utile",
+        "Je vous remercie"
+      ],
+      "responses": [
+        "Heureux d'aider !",
+        "Toujours disponible !",
+        "Avec plaisir !"
+      ]
+    },
+    {
+      "tag": "Nouveaux Bachelier",
+      "patterns": [
+        "Je suis nouveau bachelier",
+        "Je viens d'avoir mon bac",
+        "Je viens d'obtenir mon bac",
+        "Je viens de decrocher le bac"
+      ],
+      "responses": [
+        "Félicitations ! je suis trés heureux pour vous.Quelle série avez-vous faites",
+        "Bravo pour votre réussite au baccalauréat ! Puis-je connaitre votre série pour mieux vous aider dans votre orientation"
+      ]
+    },
+
+    {
+      "tag": "Bac_serie_L",
+      "patterns": [
+        "Série L",
+        "Bac L",
+        "Baccalauréat série L",
+        "Bac langues et civilisations "
+      ],
+      "responses": [
+        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n-Lettres Modernes\n-Lettres Classiques\n- Langues étrangères appliquées\n- Histoires \n- Geographie \n- Philosophie \n- Economies et gestions \n- Droit"
+      ]
+    },
+    {
+      "tag": "Bac_serie_S",
+      "patterns": [
+        "Série S",
+        "Bac S",
+        "Baccalauréat série S",
+        "Bac scientifique"
+      ],
+      "responses": [
+        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Informatique\n- Mathematiques \n- Physique-Chimie \n Medecine \n- Mecanique \n- Agronomie \n- Geographie \n- Biologie"
+      ]
+    },
+    {
+      "tag": "Bac_serie_T",
+      "patterns": [
+        "Bac Technique",
+        " T1",
+        " T2",
+        " S3",
+        " S4",
+        " S5",
+        "Baccalauréat série T"
+      ],
+      "responses": [
+        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Mecanique \n- Physique-chimie \n-Biologie"
+      ]
+    },
+    {
+      "tag": "Bac_serie_G",
+      "patterns": [
+        "Série G",
+        "Bac G",
+        "Baccalauréat série G",
+        "Bac technique quantitative d'economie et de gestion"
+      ],
+      "responses": [
+        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Sciences Economiques et Gestion \n-Transport logistique \n- Informatique de gestion "
+      ]
+    },
+    {
+      "tag": "Informatique",
+      "patterns": [
+        "Informatique",
+        "Je veux faire l'informatique",
+        "Je veux etudier l'informatique",
+        "Que dis tu de l'informatique"
+      ],
+      "responses": [
+        "L'informatique est un domaine hyper-important qui est enseigné dans presque l'ensemble des universités du senegal. \n- Le plus souvent il faut avoir un bac serie S et surtout avoir une bonne base en math et pc pour faire les filieres de de l'informatique \n- Voici certaines filieres de ce domaine au senegal : \n- Systémes Reseaux et telecoms (SRT) enseigné à l'université Alioune diop de bambey \n- Developpement d'application web  enseigné à l'université Alioune diop de bambey "
+      ]
+    },
+    {
+      "tag": "SRT",
+      "patterns": ["SRT", "Systemes reseaux et telecoms"],
+      "responses": [
+        "Une filiere essentiellement axee sur l'etude des systemes et reseaux avec une formation tres pratique et permettra à l'etudiant d'affronter le monde pro. Voici la liste des debouches de cette filiere : \n-  L'administration des systèmes informatiques,\n-  Les réseaux et télécommunications,\n-  La sécurité informatique,\n-  Le développement d'applications, \n- L'assistance et le conseil auprès d'utilisateurs de systèmes et réseaux téléinformatiques, \n-Poursuivre en master apres la licence"
+      ]
+    },
+    {
+      "tag": "D2A",
+      "patterns": ["D2A", "Developpement et administration d'applications"],
+      "responses": [
+        "Une filiere essentiellement axee sur le développement d'application avec une formation tres pratique et qui permettra à l'etudiant d'affronter le monde pro. Voici la liste des debouchés de cette filiere : \n-  L'administration des systèmes informatiques,\n-  Les réseaux et télécommunications,\n-  La sécurité informatique,\n-  Le développement d'applications, \n- L'assistance et le conseil auprès d'utilisateurs de systèmes et réseaux téléinformatiques, \n-Poursuivre en master apres la licence"
+      ]
+    },
+    {
+      "tag": "Droit",
+      "patterns": [
+        "Droit",
+        "Je veux faire le Droit",
+        "J'opte pour suivre le Droit",
+        "Pourquoi pas le Droit",
+        "une Filiere de Droit"
+      ],
+      "responses": [
+        "ce Domaine est aussi enseignée dans la plupart des universités senegalaise.\n- elle acceuille le plus souvent les bacheliers issues des series literaire du pays.\n- Voici certaines filieres de ce domaine dans notre pays. \n- Ingenierie juridique disponible à l'université Alioune Diop de Bambey.\n- Droit disponible à l'université Cheikh Anta Diop etc... "
+      ]
+    },
+    {
+      "tag": "Ingenierie juridique",
+      "patterns": ["Ingenierie juridique", "IJ", "Droit à l'uadb"],
+      "responses": [
+        "Ingenierie juridique :Ouverte aux bacheliers des series littéraires L',L1,L2.\n- L'objectif general consiste à donner aux etudiants une formation juridique générale innovante et de qualité \n- comportant l'enseignement de toutes les matieres classiques du droit public et privé.\n- Debouchés professionnels : l'etudiant titulaire de la licence peut integrer le marché de l'emploi dans les metiers du droit des affaires , du droit privé,\n- tant en entreprise qu'en cabinet de notaires, d'experts comptable, de fiscalites, d'avocats , d'administrateurs judiciaires; etc.\n- Le titulaire de cette licence peut aussi poursuivre en Master selon les modalités definis par l'UFR ECOMIJ de l'UADB"
+      ]
+    },
+    {
+      "tag": "Mathematiques",
+      "patterns": [
+        "Mathematiques",
+        "Physiques",
+        "Maths, Physiques",
+        "Je veux etudier les maths ou la physiques",
+        "Que dis tu des maths"
+      ],
+      "responses": [
+        "D'accord tu t'interesses a des fillieres scientifiques comme les Maths ou la physique/chimie.\n- ces domaines sont disponibles dans présque toutes les universités du senegal.\n- A l'université Alioune Diop nous avons MPCI (Maths Physique Chimie Informatique).\n- A l'université Cheikh Anta Diop nous avons MPI (Maths Physique Informatique) et aussi PC (Physique Chimie).\n- A l'université de Thies nous avons MI (Maths Informatique)."
+      ]
+    },
+    {
+      "tag": "MPCI",
+      "patterns": ["MPCI", "Maths Physique Chimie Informatique"],
+      "responses": [
+        "Ouverte aux bacheliers des series scientifiques S2,S1,S3 etc...\n- L'objectif est de permettre aux etudiants 'd'acquérir des connaissances et des compétences scientifiques générales \n- en Maths,Physique,chimie et Informatique. \n- Notons que seule la premiere annee est generaliste et permettra a l'etudiant de se specialiser en deuxieme année \n- soit en Maths, soit en Physique Chimie ou en SID(Statisque et Informatique Decisionnelle).\n- La poursuite d'etude est possible en master dans cette meme université apres la licence."
+      ]
+    },
+    {
+      "tag": "Sciences de la Santé",
+      "patterns": [
+        "santé",
+        "Je veux etudier dans le domaine de la santé",
+        "Medecine",
+        "je veux devenir Medecin",
+        "je veux faire medecine"
+      ],
+      "responses": [
+        "Le domaine de la santé est un domaine hyper-important et cruciale.\n- Plusieurs filieres sont disponibles sur ce domaine au senegal.\n- medecine \n- santé communautaire"
+      ]
+    },
+    {
+      "tag": "medecine",
+      "patterns": [
+        "medecine",
+        "je veux faire la medecine",
+        "parle moi de la medecine",
+        "Et pourquoi pas medecine"
+      ],
+      "responses": [
+        "Une filliere ouverte le plus souvent aux bacheliers des series scientifiques le plus souvent S2.\n- Une filliere tres selective qui acceuille les bacheliers avec au minmum la mention assez-bien .\n- Medecine est enseigné à: \n- UCAD \n- UADB \n- UGB \n- UASZ \n-  UIDT."
+      ]
+    },
+    {
+      "tag": "Economie-Gestion",
+      "patterns": [
+        "Economie",
+        "gestion",
+        "economie et gestion",
+        "comptabilité",
+        "Finance"
+      ],
+      "responses": [
+        "Ce domaine est destiné aux bacheliers de toutes les series : S1,S2,G,L2 etc...\n- Les fillieress de ce domaine sont disponible dans toutes les universités senegalaises.\n- Une petite liste de fillieres : \n- Ecoma (Economie Management) à L'université Alioune Diop de bambey\n- Faseg (Faculté des sciences et economie de gestion) à l'université Cheikh Anta Diop de Dakar"
+      ]
+    },
+    {
+      "tag": "Ecoma",
+      "patterns": ["Ecoma", "Economie Management", "Economie bambey"],
+      "responses": [
+        "Ecoma est une des filliere de l'université Alioune Diop de Bambey.\n- Elle acceuille les bacheliers de toutes les series: S2,S1,G,L2.\n- Cette formation assure aux etudiants une formation generale en economie et management.\n-Cette formation privilegie l'acquisition de connaissances et des competences\n-permettant d'aider à la resolution de problemes economiques pratiques.\n- Les debouches de cette formation :\n- Analyste economiques \n- Gestion de projet \n- Assistance à la coordination de programmes. \n- Poursuite d'etude : \n- Master en economie \n- Master en Gestion ou \n- Master en finance"
+      ]
+    }
+  ]
+}
