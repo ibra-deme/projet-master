@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
-with open('intents.json', 'r') as f:
+with open('intents.json', 'r',encoding='utf-8') as f:
     intents = json.load(f)
 
 all_words = []
@@ -127,3 +127,150 @@ FILE = "data.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')
+# import numpy as np
+# import random
+# import json
+# import os
+
+# import torch
+# import torch.nn as nn
+# from torch.utils.data import Dataset, DataLoader
+# from transformers import BertTokenizer, BertModel
+
+# from model import NeuralNet
+
+# # Charger les intents
+# try:
+#     with open('intents.json', 'r', encoding='utf-8') as f:
+#         intents = json.load(f)
+# except (FileNotFoundError, json.JSONDecodeError) as e:
+#     print("Erreur lors du chargement de 'intents.json':", e)
+#     exit()
+
+# tags = []
+# xy = []
+# all_words = []  # Liste des mots uniques
+
+# # Boucle à travers les intents
+# for intent in intents.get('intents', []):
+#     tag = intent.get('tag')
+#     if not tag:
+#         continue
+#     tags.append(tag)
+#     for pattern in intent.get('patterns', []):
+#         xy.append((pattern, tag))
+#         # Tokenisation et ajout des mots uniques
+#         words = pattern.split()  # Tokenisation simple (ou utilisez NLTK pour une meilleure tokenisation)
+#         all_words.extend(words)
+
+# if not xy:
+#     print("Aucun pattern trouvé dans 'intents.json'.")
+#     exit()
+
+# # Garder uniquement les mots uniques
+# all_words = sorted(list(set(all_words)))
+
+# # Charger BERT
+# tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+# bert_model = BertModel.from_pretrained('bert-base-uncased')
+
+# def bert_embedding(sentence):
+#     """
+#     Génère les embeddings BERT pour une phrase.
+#     """
+#     inputs = tokenizer(sentence, return_tensors="pt", padding=True, truncation=True, max_length=128)
+#     outputs = bert_model(**inputs)
+#     cls_embedding = outputs.last_hidden_state[:, 0, :]  # Shape: [1, hidden_size]
+#     return cls_embedding.detach().numpy().squeeze()
+
+# # Création des données d'entraînement
+# X = []
+# y = []
+# for (pattern_sentence, tag) in xy:
+#     embedding = bert_embedding(pattern_sentence)
+#     X.append(embedding)
+#     label = tags.index(tag)
+#     y.append(label)
+
+# X = np.array(X)
+# y = np.array(y)
+
+# # Séparation entraînement/validation
+# from sklearn.model_selection import train_test_split
+# X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# # Paramètres
+# num_epochs = 500
+# batch_size = 16
+# learning_rate = 0.001
+# input_size = 768  # Taille des embeddings BERT
+# hidden_size = 16
+# output_size = len(tags)
+
+# print(f"Entraînement: {len(X_train)} exemples, Validation: {len(X_val)} exemples")
+# print(input_size, output_size)
+
+# class ChatDataset(Dataset):
+#     def __init__(self, X, y):
+#         self.n_samples = len(X)
+#         self.x_data = torch.tensor(X, dtype=torch.float32)
+#         self.y_data = torch.tensor(y, dtype=torch.long)
+
+#     def __getitem__(self, index):
+#         return self.x_data[index], self.y_data[index]
+
+#     def __len__(self):
+#         return self.n_samples
+
+# train_dataset = ChatDataset(X_train, y_train)
+# val_dataset = ChatDataset(X_val, y_val)
+
+# train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True, num_workers=0)
+# val_loader = DataLoader(dataset=val_dataset, batch_size=batch_size, shuffle=False, num_workers=0)
+
+# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+# model = NeuralNet(input_size, hidden_size, output_size).to(device)
+
+# criterion = nn.CrossEntropyLoss()
+# optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+
+# # Entraînement
+# for epoch in range(num_epochs):
+#     model.train()
+#     for words, labels in train_loader:
+#         words = words.to(device)
+#         labels = labels.to(device)
+
+#         outputs = model(words)
+#         loss = criterion(outputs, labels)
+
+#         optimizer.zero_grad()
+#         loss.backward()
+#         optimizer.step()
+
+#     # Validation
+#     if (epoch + 1) % 50 == 0:
+#         model.eval()
+#         val_loss = 0
+#         with torch.no_grad():
+#             for words, labels in val_loader:
+#                 words = words.to(device)
+#                 labels = labels.to(device)
+#                 outputs = model(words)
+#                 val_loss += criterion(outputs, labels).item()
+
+#         print(f"Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}, Val Loss: {val_loss / len(val_loader):.4f}")
+
+# # Sauvegarde
+# data = {
+#     "model_state": model.state_dict(),
+#     "input_size": input_size,
+#     "hidden_size": hidden_size,
+#     "output_size": output_size,
+#     "tags": tags,
+#     "all_words": all_words  # Sauvegarde de all_words
+# }
+
+# FILE = "data.pth"
+# torch.save(data, FILE)
+# print(f"Entraînement terminé. Modèle sauvegardé dans {FILE}.")

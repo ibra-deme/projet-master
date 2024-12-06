@@ -5,6 +5,7 @@
       "patterns": [
         "Salut",
         "Bonjour",
+        "Bonsoir",
         "Comment ça va ?",
         "coucou",
         "Hello",
@@ -43,16 +44,30 @@
       ]
     },
     {
-      "tag": "Nouveaux Bachelier",
+      "tag": "Nouveau Bachelier",
       "patterns": [
-        "Je suis nouveau bachelier",
-        "Je viens d'avoir mon bac",
-        "Je viens d'obtenir mon bac",
-        "Je viens de decrocher le bac"
+        "Je suis un nouveau bachelier",
+        "Je viens de décrocher mon bac",
+        "J'ai eu mon bac",
+        "Je suis bachelier",
+        "J'ai réussi mon baccalauréat"
       ],
       "responses": [
         "Félicitations ! je suis trés heureux pour vous.Quelle série avez-vous faites",
         "Bravo pour votre réussite au baccalauréat ! Puis-je connaitre votre série pour mieux vous aider dans votre orientation"
+      ]
+    },
+    {
+      "tag": "Aide_financiere",
+      "patterns": [
+        "Aide financière pour les études",
+        "Bourses d'études",
+        "Comment obtenir une bourse",
+        "Je cherche une aide financière"
+      ],
+      "responses": [
+        "Il existe plusieurs bourses disponibles pour les étudiants sénégalais. Vous pouvez consulter les opportunités sur le site de l'Agence de la Promotion des Bourses et sur les sites des universités et écoles supérieures.",
+        "Pour obtenir une bourse d'études, vous devez vérifier les critères spécifiques de chaque programme. Les informations sont souvent publiées sur les plateformes des établissements d'enseignement ou sur le site de l'État."
       ]
     },
 
@@ -74,6 +89,8 @@
       "patterns": [
         "Série S",
         "Bac S",
+
+        "j'ai un bac s2",
         "Baccalauréat série S",
         "Bac scientifique"
       ],
@@ -91,6 +108,7 @@
         " S3",
         " S4",
         " S5",
+        "j'ai un bac T",
         "Baccalauréat série T"
       ],
       "responses": [
@@ -115,7 +133,10 @@
       "tag": "Informatique",
       "patterns": [
         "Informatique",
-        "Je veux faire l'informatique",
+        "Informatoque",
+        "Inf",
+        "comment faire informatique",
+        "Je veux faire informatique",
         "Je veux etudier l'informatique",
         "Que dis tu de l'informatique"
       ],
@@ -140,7 +161,7 @@
     {
       "tag": "Droit",
       "patterns": [
-        "Droit",
+        "droit",
         "Je veux faire le Droit",
         "J'opte pour suivre le Droit",
         "Pourquoi pas le Droit",
@@ -177,19 +198,7 @@
         "Ouverte aux bacheliers des series scientifiques S2,S1,S3 etc...\n- L'objectif est de permettre aux etudiants 'd'acquérir des connaissances et des compétences scientifiques générales \n- en Maths,Physique,chimie et Informatique. \n- Notons que seule la premiere annee est generaliste et permettra a l'etudiant de se specialiser en deuxieme année \n- soit en Maths, soit en Physique Chimie ou en SID(Statisque et Informatique Decisionnelle).\n- La poursuite d'etude est possible en master dans cette meme université apres la licence."
       ]
     },
-    {
-      "tag": "Sciences de la Santé",
-      "patterns": [
-        "santé",
-        "Je veux etudier dans le domaine de la santé",
-        "Medecine",
-        "je veux devenir Medecin",
-        "je veux faire medecine"
-      ],
-      "responses": [
-        "Le domaine de la santé est un domaine hyper-important et cruciale.\n- Plusieurs filieres sont disponibles sur ce domaine au senegal.\n- medecine \n- santé communautaire"
-      ]
-    },
+
     {
       "tag": "medecine",
       "patterns": [
@@ -217,9 +226,89 @@
     },
     {
       "tag": "Ecoma",
-      "patterns": ["Ecoma", "Economie Management", "Economie bambey"],
+      "patterns": ["Economie Management", "Economie bambey"],
       "responses": [
         "Ecoma est une des filliere de l'université Alioune Diop de Bambey.\n- Elle acceuille les bacheliers de toutes les series: S2,S1,G,L2.\n- Cette formation assure aux etudiants une formation generale en economie et management.\n-Cette formation privilegie l'acquisition de connaissances et des competences\n-permettant d'aider à la resolution de problemes economiques pratiques.\n- Les debouches de cette formation :\n- Analyste economiques \n- Gestion de projet \n- Assistance à la coordination de programmes. \n- Poursuite d'etude : \n- Master en economie \n- Master en Gestion ou \n- Master en finance"
+      ]
+    },
+    {
+      "tag": "Creation_compte_campusen",
+      "patterns": [
+        "Comment créer un compte sur Campusen",
+        "Je veux m'inscrire sur Campusen",
+        "Procédure d'inscription sur Campusen",
+        "Comment ouvrir un compte sur Campusen",
+        "Quelles sont les étapes pour créer un compte Campusen",
+        "Créer un compte Campusen",
+        "Ouvrir un compte Campusen",
+        "S'inscrire sur Campusen"
+      ],
+      "responses": [
+        "Pour créer un compte sur Campusen, rendez-vous sur leur site officiel (www.campusen.sn) et cliquez sur 'Créer un compte'. Remplissez le formulaire d'inscription en fournissant vos informations personnelles, puis validez. Un email de confirmation vous sera envoyé pour finaliser l'inscription."
+      ]
+    },
+    {
+      "tag": "Choix_filiere",
+      "patterns": [
+        "choix de filiere",
+        "Aide pour choisir une filière",
+        "Aide-moi à choisir une filière",
+        "Je cherche de l'aide pour choisir une filière",
+        "Conseils pour choisir une filière",
+        "Comment choisir ma filiere ?",
+        "Quelle filière devrais-je choisir ?"
+      ],
+      "responses": [
+        "Le choix de la filière dépend de plusieurs critères : vos préférences personnelles, vos résultats académiques, et les débouchés professionnels que vous envisagez. N'hésitez pas à explorer des domaines qui vous passionnent et à consulter les conseillers d'orientation. Certaines filières peuvent aussi exiger un minimum de note dans certaines matières."
+      ]
+    },
+
+    {
+      "tag": "Reconnaissance_filiere",
+      "patterns": ["Comment savoir si une filière est reconnue"],
+      "responses": [
+        "Pour vérifier si une filière est reconnue, vous pouvez consulter le site de l'ANAQ-Sup. Les filières reconnues y sont listées, et vous y trouverez également des informations sur les établissements et les accréditations valides."
+      ]
+    },
+    {
+      "tag": "Universités_publiques",
+      "patterns": [
+        "Liste des universités publiques",
+        "Quelles sont les universités publiques au Sénégal ?",
+        "Universités publiques au Sénégal",
+        "Universités au Sénégal"
+      ],
+      "responses": [
+        "Voici les principales universités publiques au Sénégal :\n\n1. Université Cheikh Anta Diop de Dakar (UCAD) : [ucad.sn](http://www.ucad.sn)\n2. Université Gaston Berger de Saint-Louis (UGB) : [ugb.sn](http://www.ugb.sn)\n3. Université Alioune Diop de Bambey (UADB) : [uadb.edu.sn](http://www.uadb.edu.sn)\n4. Université Assane Seck de Ziguinchor (UASZ) : [uasz.edu.sn](http://www.uasz.edu.sn)\n5. Université Iba Der Thiam de Thiès (UIDT) : [univ-thies.sn](http://www.univ-thies.sn)\n6. Université Amadou Mahtar Mbow de Dakar (UAM) : [uam.sn](http://www.uam.sn)\n\nCes universités offrent une grande variété de filières. Je vous conseille de consulter leurs sites web pour des informations détaillées et pour vérifier la reconnaissance des filières par l'ANAQ-Sup."
+      ]
+    },
+    {
+      "tag": "Universités_privées",
+      "patterns": [
+        "universites privees",
+        "Liste des universités privées",
+        "Quelles sont les universités privées reconnues au Sénégal ?",
+        "Universités privées reconnues par l'ANAQ-Sup"
+      ],
+      "responses": [
+        "Voici quelques universités privées reconnues par l'ANAQ-Sup au Sénégal :\n\n1. Université Dakar Bourguiba (UDB) : [univdb.sn](http://www.univdb.sn)\n2. Institut Supérieur de Management (ISM) : [ism.edu.sn](http://www.ism.edu.sn)\n3. Université du Sahel : [univdusahel.com](http://www.univdusahel.com)\n4. Institut Africain de Management (IAM) : [iam.sn](http://www.iam.sn)\n5. École Supérieure Polytechnique de Dakar (ESP) : [esp.sn](http://www.esp.sn)\n\nPour garantir que les filières proposées sont reconnues par l'ANAQ-Sup, je recommande de consulter les sites des universités ou de vérifier directement sur le site de l'ANAQ-Sup."
+      ]
+    },
+    {
+      "tag": "Processus_inscription_campusen",
+      "patterns": [
+        "Comment ouvrir un compte sur Campusen",
+        "Inscription sur campusen"
+      ],
+      "responses": [
+        "Pour vous inscrire sur Campusen, suivez ces étapes :\n\n1. Allez sur le site [campusen.sn](http://www.campusen.sn).\n2. Cliquez sur \"Créer un compte\" et suivez les instructions pour remplir le formulaire d'inscription.\n3. Vous recevrez un e-mail de confirmation. Suivez le lien pour activer votre compte.\n4. Une fois connecté, vous pourrez choisir vos filières, vérifier les prérequis et suivre les étapes de candidature.\n\nSi vous avez des questions spécifiques, je suis là pour vous aider !"
+      ]
+    },
+    {
+      "tag": "Reconnaissance_filières",
+      "patterns": ["Comment savoir si une filiere est reconnue"],
+      "responses": [
+        "Pour vérifier la reconnaissance d'une filière par l'ANAQ-Sup, vous pouvez consulter leur site web [anaqsup.sn](http://www.anaqsup.sn) ou vérifier les listes des filières reconnues disponibles sur les sites des universités. Cela vous assurera que la formation que vous suivez est accréditée."
       ]
     }
   ]
