@@ -232,9 +232,14 @@ CORS(app)
 # Configuration de SQLite
 def get_db_connection():
     try:
-        connection = sqlite3.connect("chatbot_db.sqlite")
-        connection.execute("PRAGMA foreign_keys = 1")  # Assure l'intégrité référentielle
+        connection = sqlite3.connect("my_chatbot.sqlite")
+        connection.execute("PRAGMA journal_mode = WAL;")  # Active le mode WAL
+        connection.execute("PRAGMA foreign_keys = 1;") 
+       
         return connection
+        # conn = sqlite3.connect("chatbot_db.sqlite")
+        # conn.execute("PRAGMA journal_mode = WAL;")  # Active le mode WAL
+        # conn.execute("PRAGMA foreign_keys = 1")
     except sqlite3.Error as e:
         print(f"Erreur lors de la connexion à la base de données : {e}")
         return None
@@ -279,36 +284,41 @@ model.eval()
 def generate_response(user_message):
     # Correction orthographique du message de l'utilisateur
     corrected_message = correct_spelling_spellchecker(user_message)
-    print("Message corrigé:", corrected_message)  # Afficher la correction pour vérifier
+    print("Message corrigé:", corrected_message)
     
     # Tokenisation du message corrigé
     sentence = tokenize(corrected_message)
-    print("Tokens:", sentence)  # Afficher les tokens pour vérifier
+    print("Tokens:", sentence)
 
     # Création du sac de mots
     X = bag_of_words(sentence, all_words)
-    print("Sac de mots:", X)  # Afficher le sac de mots avant de le passer dans le modèle
+    print("Sac de mots:", X)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
 
     # Passer le message corrigé dans le modèle
     output = model(X)
-    print("Sortie du modèle:", output)  # Afficher la sortie brute du modèle
+    print("Sortie du modèle:", output)
     _, predicted = torch.max(output, dim=1)
     tag = tags[predicted.item()]
+    print("Tag prédit:", tag)
 
     # Calcul de la probabilité
     probs = torch.softmax(output, dim=1)
-    prob = probs[0][predicted.item()] if probs.size(1) > 0 else 0.0  # Vérifier que prob peut être calculé
-    print(f"Tag prédit: {tag}, Probabilité: {prob.item()}")  # Afficher la probabilité pour le débogage
+    prob = probs[0][predicted.item()] if probs.size(1) > 0 else 0.0
+    print(f"Probabilité: {prob.item()}")
 
     # Vérification de la probabilité de la réponse
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                return random.choice(intent['responses'])
+                response = random.choice(intent['responses'])
+                print("Réponse choisie:", response)
+                return response
     else:
+        print("Probabilité insuffisante pour une réponse valide.")
         return "Je ne comprends pas..."
+
 
 
 
@@ -379,7 +389,30 @@ def login():
 
 
 # Endpoint de chat avec enregistrement de la conversation
-@app.route("/chat", methods=["POST"])
+@app.route('/chat', methods=['POST'])
+# def chat():
+#     data = request.get_json()
+#     user_message = data.get("message", "")
+#     user_id = data.get("user_id", 0)
+    
+#     try:
+#         # Connexion à la base de données avec un timeout
+#         conn = sqlite3.connect("my_chatbot.sqlite", timeout=10)
+#         cursor = conn.cursor()
+        
+#         # Effectuer une requête
+#         cursor.execute("INSERT INTO chats (user_id, message) VALUES (?, ?)", (user_id, user_message))
+#         conn.commit()
+        
+#         # Exécuter une autre requête ou retourner une réponse
+#         response = {"response": "Message reçu !"}
+#         return jsonify(response)
+#     except sqlite3.OperationalError as e:
+#         # Gestion des erreurs
+#         return jsonify({"error": "Database is locked", "details": str(e)}), 500
+#     finally:
+#         cursor.close()
+#         conn.close()
 def chat():
     data = request.get_json()
     user_message = data.get("message")
@@ -400,7 +433,9 @@ def chat():
     cursor.close()
     conn.close()
 
-    return jsonify(response=response)
+    # Ajoutez une réponse de confirmation ici
+    return jsonify(message="Message processed successfully", response=response), 200
+
 @app.route("/messages", methods=["GET"])
 def get_messages():
     user_id = request.args.get('user_id')

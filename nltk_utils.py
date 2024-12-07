@@ -55,7 +55,8 @@
 #avant
 import numpy as np
 import nltk
-
+import spellchecker
+from spellchecker import SpellChecker
 from textblob import TextBlob
 from nltk.stem.porter import PorterStemmer
 from spellchecker import SpellChecker
@@ -84,11 +85,17 @@ stemmer = PorterStemmer()
 #     blob = TextBlob(sentence)
 #     return str(blob.correct())
 def correct_spelling_spellchecker(sentence):
-    spell = SpellChecker(language='fr')  # Pour corriger en français
-    words = sentence.split()  # Séparer la phrase en mots
-    corrected_words = [spell.correction(word) for word in words]  # Correction des fautes
-    corrected_sentence = " ".join(corrected_words)  # Rejoindre les mots corrigés
+    # Crée une instance de SpellChecker pour la langue française
+    spell = SpellChecker(language='fr')
+    corrected_words = []
+    for word in sentence.split():
+        corrected_word = spell.correction(word)
+        corrected_words.append(corrected_word if corrected_word else word)
+    
+    corrected_sentence = " ".join(corrected_words)
     return corrected_sentence
+
+
 
 def tokenize(sentence):
     """
