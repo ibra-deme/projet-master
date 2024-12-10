@@ -232,7 +232,7 @@ CORS(app)
 # Configuration de SQLite
 def get_db_connection():
     try:
-        connection = sqlite3.connect("my_chatbot.sqlite")
+        connection = sqlite3.connect("chatbot_db.sqlite")
         connection.execute("PRAGMA journal_mode = WAL;")  # Active le mode WAL
         connection.execute("PRAGMA foreign_keys = 1;") 
        

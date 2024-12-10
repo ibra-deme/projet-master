@@ -66,7 +66,7 @@
         "Je cherche une aide financière"
       ],
       "responses": [
-        "Il existe plusieurs bourses disponibles pour les étudiants sénégalais. Vous pouvez consulter les opportunités sur le site de l'Agence de la Promotion des Bourses et sur les sites des universités et écoles supérieures.",
+        "Il existe plusieurs bourses disponibles pour les étudiants sénégalais. Vous pouvez consulter les opportunités sur le site de l'Agence de la direction des bourses et sur les sites des universités et écoles supérieures.",
         "Pour obtenir une bourse d'études, vous devez vérifier les critères spécifiques de chaque programme. Les informations sont souvent publiées sur les plateformes des établissements d'enseignement ou sur le site de l'État."
       ]
     },
@@ -81,7 +81,7 @@
       ],
       "responses": [
         "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
-        "Voici quelques domaines d'etudes qui s'offrent à vous :\n-Lettres Modernes\n-Lettres Classiques\n- Langues étrangères appliquées\n- Histoires \n- Geographie \n- Philosophie \n- Economies et gestions \n- Droit"
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n-Lettres Modernes\n-Lettres Classiques\n- Langues étrangères appliquées\n- Histoires \n- Geographie \n- Philosophie \n- Economies et gestions \n- Droit. \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations "
       ]
     },
     {
@@ -96,7 +96,7 @@
       ],
       "responses": [
         "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
-        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Informatique\n- Mathematiques \n- Physique-Chimie \n Medecine \n- Mecanique \n- Agronomie \n- Geographie \n- Biologie"
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Informatique\n- Mathematiques \n- Physique-Chimie \n Medecine \n- Mecanique \n- Agronomie \n- Geographie \n- Biologie \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations"
       ]
     },
     {
@@ -113,7 +113,7 @@
       ],
       "responses": [
         "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
-        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Mecanique \n- Physique-chimie \n-Biologie"
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Mecanique \n- Physique-chimie \n- Informatique \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations"
       ]
     },
     {
@@ -126,7 +126,7 @@
       ],
       "responses": [
         "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
-        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Sciences Economiques et Gestion \n-Transport logistique \n- Informatique de gestion "
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Sciences Economiques et Gestion \n-Transport logistique \n- Informatique de gestion. \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations. "
       ]
     },
     {
@@ -179,6 +179,45 @@
       ]
     },
     {
+      "tag": "lettres_modernes",
+      "patterns": [
+        "Peux-tu me parler des Lettres Modernes ?",
+        "Qu'est-ce que la Licence en Lettres Modernes ?",
+        "Donne-moi des informations sur les Lettres Modernes à l'UCAD.",
+        "Quels sont les débouchés pour la Licence Lettres Modernes ?",
+        "Licence Lettres Modernes"
+      ],
+      "responses": [
+        "La formation en Licence de Lettres Modernes quant a elle est disponible qu'à l'Université Cheikh-Anta-Diop (UCAD) est d'une durée de 3 ans, soit 6 semestres. Elle délivre un diplôme de niveau Bac + 3. Cette formation se déroule en présentiel à la Faculté des Lettres et Sciences humaines.\n\nAu cours de cette formation, les étudiants auront l'occasion d'approfondir leurs connaissances en français et en littérature. Ils étudieront des cours tels que la grammaire française, la linguistique, la stylistique, la poésie, le roman, le théâtre, la littérature comparée, etc.\n\n**Débouchés et Métiers accessibles**\n\nA l'issue de la Licence de Lettres Modernes délivrée par l'Université Cheikh-Anta-Diop (UCAD), les étudiants peuvent commencer leur carrière comme:\n\n1. Enseignant de français: Enseigner la langue française et la littérature dans les établissements scolaires.\n2. Éditeur: Participer à la publication et à la diffusion d'ouvrages littéraires et artistiques.\n3. Traducteur: Traduire des textes littéraires et artistiques d'une langue à une autre.\n4. Journaliste culturel: Couvrir des événements culturels et rédiger des articles sur la littérature et les arts.\n5. Responsable de communication: Gérer la communication interne et externe d'une entreprise ou d'une organisation.\n6. Critique littéraire: Analyser et évaluer des œuvres littéraires dans des publications spécialisées.\n\n**Formations complémentaires diplômantes à un niveau supérieur:**\n\n- Master en Lettres Modernes: Approfondir les connaissances en littérature et en linguistique.\n- Master en Éducation: Se spécialiser dans l'enseignement du français et des lettres.\n- Master en Édition: Acquérir des compétences en édition et en gestion de projets éditoriaux.\n- Master en Traduction: Se spécialiser dans la traduction littéraire et artistique.\n- Master en Communication: Approfondir les compétences en communication et en gestion de projets."
+      ]
+    },
+    {
+      "tag": "langues_etrangeres_appliquees",
+      "patterns": [
+        "Peux-tu me parler des Langues Étrangères Appliquées ?",
+        "Qu'est-ce que le programme en Langues Étrangères Appliquées ?",
+        "Donne-moi des informations sur les Langues Étrangères Appliquées",
+        "Quels sont les débouchés pour les Langues Étrangères Appliquées ?",
+        "Langues Étrangères Appliquées"
+      ],
+      "responses": [
+        "Le programme de formation en Langues Étrangères Appliquées a pour objectif général de former des cadres spécialisés en langues étrangères, capables de contribuer à la satisfaction des besoins de communication des organisations professionnelles.\n\nPlus spécifiquement, il s’agit de former des cadres trilingues ayant une bonne maîtrise des mécanismes et des procédés d’expression orale et écrite des langues étrangères et pouvant les utiliser pour traduire et traiter l’information technique, scientifique et administrative, indispensable à la gestion d´une entreprise moderne.\n\nLa formation en langues étrangères appliquées prépare aux métiers d’interprète, de traducteur, d’assistant, d’enseignant et de médiateur linguistique et culturel dans les domaines :\n\n- des affaires et du commerce international;\n- de l´agro-alimentaire;\n- de l’import/export;\n- de l’industrie;\n- de la banque et des finances;\n- des affaires administratives et publiques;\n- des relations diplomatiques;\n- de la communication.\n\nCette formation est disponible à l'UCAD, à l'UIDT et à l'UGB."
+      ]
+    },
+    {
+      "tag": "histoire",
+      "patterns": [
+        "Peux-tu me parler de la Licence en Histoire ?",
+        "Qu'est-ce que la Licence d'Histoire ?",
+        "Donne-moi des informations sur l'Histoire à l'UCAD.",
+        "Quels sont les débouchés pour la Licence Histoire ?",
+        "Licence Histoire"
+      ],
+      "responses": [
+        "La formation en Licence d'Histoire à l'Université Cheikh-Anta-Diop (UCAD) est d'une durée de 3 ans. Elle délivre un diplôme de niveau Bac + 3. Cette formation se déroule en présentiel à la Faculté des Lettres et Sciences humaines.\n\nParmi les cours enseignés, on retrouve des matières telles que l'Histoire de l'Afrique, l'Histoire de l'Europe, l'Histoire de l'Art, l'Histoire politique, l'Histoire économique, l'Histoire sociale, etc. Ces cours permettent aux étudiants d'acquérir une solide connaissance des différentes périodes historiques et des méthodes de recherche en histoire.\n\nA l'issue de la Licence d'Histoire à l'UCAD, les étudiants peuvent commencer leur carrière comme:\n\n1. Enseignant d'Histoire: Enseigner l'Histoire dans les établissements scolaires ou universitaires.\n2. Chercheur en Histoire: Effectuer des recherches sur des sujets historiques spécifiques.\n3. Conservateur du patrimoine: Préserver et mettre en valeur les objets et documents historiques.\n4. Journaliste spécialisé en Histoire: Écrire des articles ou réaliser des reportages sur des événements historiques.\n5. Guide touristique: Faire découvrir les sites historiques et culturels aux visiteurs.\n6. Responsable de la communication culturelle: Promouvoir des événements et des projets liés à l'Histoire.\n\n**Formations complémentaires diplômantes à un niveau supérieur:**\n\n- Master en Histoire: Approfondir les connaissances et les compétences en recherche historique.\n- Master en Archéologie: Se spécialiser dans l'étude des vestiges archéologiques.\n- Master en Muséologie: Acquérir des compétences en gestion et en conservation des collections muséales.\n- Master en Journalisme: Se former aux techniques de journalisme et de communication.\n- Master en Éducation: Préparer à l'enseignement dans le domaine de l'Histoire."
+      ]
+    },
+    {
       "tag": "Mathematiques",
       "patterns": [
         "Mathematiques",
@@ -188,7 +227,7 @@
         "Que dis tu des maths"
       ],
       "responses": [
-        "D'accord tu t'interesses a des fillieres scientifiques comme les Maths ou la physique/chimie.\n- ces domaines sont disponibles dans présque toutes les universités du senegal.\n- A l'université Alioune Diop nous avons MPCI (Maths Physique Chimie Informatique).\n- A l'université Cheikh Anta Diop nous avons MPI (Maths Physique Informatique) et aussi PC (Physique Chimie).\n- A l'université de Thies nous avons MI (Maths Informatique)."
+        "D'accord tu t'interesses à des fillieres scientifiques comme les Maths ou la physique/chimie.\n- ces domaines sont disponibles dans présque toutes les universités du senegal.\n- A l'université Alioune Diop nous avons MPCI (Maths Physique Chimie Informatique).\n- A l'université Cheikh Anta Diop nous avons MPI (Maths Physique Informatique) et aussi PC (Physique Chimie).\n- A l'université de Thies nous avons MI (Maths Informatique)."
       ]
     },
     {
