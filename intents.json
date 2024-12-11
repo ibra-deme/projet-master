@@ -66,7 +66,7 @@
         "Je cherche une aide financière"
       ],
       "responses": [
-        "Il existe plusieurs bourses disponibles pour les étudiants sénégalais. Vous pouvez consulter les opportunités sur le site de l'Agence de la direction des bourses et sur les sites des universités et écoles supérieures.",
+        "Il existe plusieurs bourses disponibles pour les étudiants sénégalais. Vous pouvez consulter les opportunités sur le site  de la direction des bourses(à la page d'acceuil de l'application) et sur les sites des universités et écoles supérieures.",
         "Pour obtenir une bourse d'études, vous devez vérifier les critères spécifiques de chaque programme. Les informations sont souvent publiées sur les plateformes des établissements d'enseignement ou sur le site de l'État."
       ]
     },
@@ -141,7 +141,7 @@
         "Que dis tu de l'informatique"
       ],
       "responses": [
-        "L'informatique est un domaine hyper-important qui est enseigné dans presque l'ensemble des universités du senegal. \n- Le plus souvent il faut avoir un bac serie S et surtout avoir une bonne base en math et pc pour faire les filieres de de l'informatique \n- Voici certaines filieres de ce domaine au senegal : \n- Systémes Reseaux et telecoms (SRT) enseigné à l'université Alioune diop de bambey \n- Developpement d'application web  enseigné à l'université Alioune diop de bambey "
+        "L'informatique est un domaine hyper-important qui est enseigné dans presque l'ensemble des universités du senegal. \n- Le plus souvent il faut avoir un bac serie S et surtout avoir une bonne base en math et pc pour faire les filieres de de l'informatique \n- Voici certaines filieres de ce domaine au senegal : \n- Systémes Reseaux et telecoms (SRT) enseigné à l'université Alioune diop de bambey \n- Developpement d'application web  enseigné à l'université Alioune diop de bambey. \n- Veuillez taper le nom de l'une des  filiére de l'informatique qui vous interesse pour plus d'informations. "
       ]
     },
     {
@@ -168,7 +168,7 @@
         "une Filiere de Droit"
       ],
       "responses": [
-        "ce Domaine est aussi enseignée dans la plupart des universités senegalaise.\n- elle acceuille le plus souvent les bacheliers issues des series literaire du pays.\n- Voici certaines filieres de ce domaine dans notre pays. \n- Ingenierie juridique disponible à l'université Alioune Diop de Bambey.\n- Droit disponible à l'université Cheikh Anta Diop etc... "
+        "ce Domaine est aussi enseignée dans la plupart des universités senegalaise.\n- elle acceuille le plus souvent les bacheliers issues des series literaire du pays.\n- Voici certaines filieres de ce domaine dans notre pays. \n- Ingenierie juridique disponible à l'université Alioune Diop de Bambey.\n- Droit disponible à l'université Cheikh Anta Diop etc... \n- Veuillez taper le nom de l'une des  filiére de ce domaine qui vous interesse pour plus d'informations."
       ]
     },
     {
