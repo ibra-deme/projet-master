@@ -58,6 +58,13 @@
       ]
     },
     {
+      "tag": "etudiant",
+      "patterns": ["Je suis etudiant"],
+      "responses": [
+        "Trés heureux pour vous ! Pouvez vous me donner juste le nom de votre filiere pour plus d'information"
+      ]
+    },
+    {
       "tag": "Aide_financiere",
       "patterns": [
         "Aide financière pour les études",
@@ -80,7 +87,6 @@
         "Bac langues et civilisations "
       ],
       "responses": [
-        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
         "Voici quelques domaines d'etudes qui s'offrent à vous :\n-Lettres Modernes\n-Lettres Classiques\n- Langues étrangères appliquées\n- Histoires \n- Geographie \n- Philosophie \n- Economies et gestions \n- Droit. \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations "
       ]
     },
@@ -89,13 +95,11 @@
       "patterns": [
         "Série S",
         "Bac S",
-
         "j'ai un bac s2",
         "Baccalauréat série S",
         "Bac scientifique"
       ],
       "responses": [
-        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
         "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Informatique\n- Mathematiques \n- Physique-Chimie \n Medecine \n- Mecanique \n- Agronomie \n- Geographie \n- Biologie \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations"
       ]
     },
@@ -112,7 +116,6 @@
         "Baccalauréat série T"
       ],
       "responses": [
-        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
         "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Mecanique \n- Physique-chimie \n- Informatique \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations"
       ]
     },
@@ -125,7 +128,6 @@
         "Bac technique quantitative d'economie et de gestion"
       ],
       "responses": [
-        "Bravo ! Avez-vous déjà des choix de domaines en tête pour vos études supérieures ? Si oui, n'hésitez pas à les partager afin que je puisse vous fournir des informations pertinentes.",
         "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Sciences Economiques et Gestion \n-Transport logistique \n- Informatique de gestion. \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations. "
       ]
     },
@@ -146,16 +148,26 @@
     },
     {
       "tag": "SRT",
-      "patterns": ["SRT", "Systemes reseaux et telecoms"],
+      "patterns": [
+        "SRT",
+        "Systemes reseaux et telecoms",
+        "je suis en licence systemes reseaux et telecoms"
+      ],
       "responses": [
         "Une filiere essentiellement axee sur l'etude des systemes et reseaux avec une formation tres pratique et permettra à l'etudiant d'affronter le monde pro. Voici la liste des debouches de cette filiere : \n-  L'administration des systèmes informatiques,\n-  Les réseaux et télécommunications,\n-  La sécurité informatique,\n-  Le développement d'applications, \n- L'assistance et le conseil auprès d'utilisateurs de systèmes et réseaux téléinformatiques, \n-Poursuivre en master apres la licence"
       ]
     },
     {
       "tag": "D2A",
-      "patterns": ["D2A", "Developpement et administration d'applications"],
+      "patterns": [
+        "D2A",
+        "Developpement et administration d'applications",
+        "je suis en developpement web",
+        "developpement web",
+        "genie logiciel"
+      ],
       "responses": [
-        "Une filiere essentiellement axee sur le développement d'application avec une formation tres pratique et qui permettra à l'etudiant d'affronter le monde pro. Voici la liste des debouchés de cette filiere : \n-  L'administration des systèmes informatiques,\n-  Les réseaux et télécommunications,\n-  La sécurité informatique,\n-  Le développement d'applications, \n- L'assistance et le conseil auprès d'utilisateurs de systèmes et réseaux téléinformatiques, \n-Poursuivre en master apres la licence"
+        "Une filiere essentiellement axee sur le développement d'application avec une formation tres pratique et qui permettra à l'etudiant d'affronter le monde pro. Voici la liste des debouchés de cette filiere : \n-  L'administration des systèmes informatiques,\n-  Les réseaux et télécommunications,\n-  La sécurité informatique,\n-  Le développement d'applications, \n- L'assistance et le conseil auprès d'utilisateurs de systèmes et réseaux téléinformatiques, \n-Poursuivre en master SI apres la licence"
       ]
     },
     {
@@ -254,7 +266,10 @@
       "tag": "Economie-Gestion",
       "patterns": [
         "Economie",
-        "gestion",
+        "je veux faire Economie",
+        "economie",
+        "je fais economie",
+        "je veux faire gestion",
         "economie et gestion",
         "comptabilité",
         "Finance"
@@ -304,7 +319,11 @@
 
     {
       "tag": "Reconnaissance_filiere",
-      "patterns": ["Comment savoir si une filière est reconnue"],
+      "patterns": [
+        "Comment savoir si une filière est reconnue",
+        "reconnaissance de diplome",
+        "reconnaissance de filiere"
+      ],
       "responses": [
         "Pour vérifier si une filière est reconnue, vous pouvez consulter le site de l'ANAQ-Sup. Les filières reconnues y sont listées, et vous y trouverez également des informations sur les établissements et les accréditations valides."
       ]
@@ -312,10 +331,11 @@
     {
       "tag": "Universités_publiques",
       "patterns": [
-        "Liste des universités publiques",
+        "je veux la liste des universités publiques",
         "Quelles sont les universités publiques au Sénégal ?",
         "Universités publiques au Sénégal",
-        "Universités au Sénégal"
+        "Universités publique",
+        "Universités senegalaise"
       ],
       "responses": [
         "Voici les principales universités publiques au Sénégal :\n\n1. Université Cheikh Anta Diop de Dakar (UCAD) : [ucad.sn](http://www.ucad.sn)\n2. Université Gaston Berger de Saint-Louis (UGB) : [ugb.sn](http://www.ugb.sn)\n3. Université Alioune Diop de Bambey (UADB) : [uadb.edu.sn](http://www.uadb.edu.sn)\n4. Université Assane Seck de Ziguinchor (UASZ) : [uasz.edu.sn](http://www.uasz.edu.sn)\n5. Université Iba Der Thiam de Thiès (UIDT) : [univ-thies.sn](http://www.univ-thies.sn)\n6. Université Amadou Mahtar Mbow de Dakar (UAM) : [uam.sn](http://www.uam.sn)\n\nCes universités offrent une grande variété de filières. Je vous conseille de consulter leurs sites web pour des informations détaillées et pour vérifier la reconnaissance des filières par l'ANAQ-Sup."
@@ -325,7 +345,7 @@
       "tag": "Universités_privées",
       "patterns": [
         "universites privees",
-        "Liste des universités privées",
+        "je veux la liste des universités privées",
         "Quelles sont les universités privées reconnues au Sénégal ?",
         "Universités privées reconnues par l'ANAQ-Sup"
       ],
@@ -341,13 +361,6 @@
       ],
       "responses": [
         "Pour vous inscrire sur Campusen, suivez ces étapes :\n\n1. Allez sur le site [campusen.sn](http://www.campusen.sn).\n2. Cliquez sur \"Créer un compte\" et suivez les instructions pour remplir le formulaire d'inscription.\n3. Vous recevrez un e-mail de confirmation. Suivez le lien pour activer votre compte.\n4. Une fois connecté, vous pourrez choisir vos filières, vérifier les prérequis et suivre les étapes de candidature.\n\nSi vous avez des questions spécifiques, je suis là pour vous aider !"
-      ]
-    },
-    {
-      "tag": "Reconnaissance_filières",
-      "patterns": ["Comment savoir si une filiere est reconnue"],
-      "responses": [
-        "Pour vérifier la reconnaissance d'une filière par l'ANAQ-Sup, vous pouvez consulter leur site web [anaqsup.sn](http://www.anaqsup.sn) ou vérifier les listes des filières reconnues disponibles sur les sites des universités. Cela vous assurera que la formation que vous suivez est accréditée."
       ]
     }
   ]
