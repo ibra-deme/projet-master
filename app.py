@@ -317,7 +317,7 @@ def generate_response(user_message):
                 return response
     else:
         print("Probabilité insuffisante pour une réponse valide.")
-        return "Je ne comprends pas..."
+        return "Je ne comprends pas pouvez-vous reformuler svp..."
 
 
 

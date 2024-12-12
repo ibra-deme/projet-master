@@ -12,7 +12,6 @@
         "Hey"
       ],
       "responses": [
-        "Salut:-)",
         "Salut ! comment puis-je vous aider dans votre orientation?",
         "Salut ! En quoi puis-je vous assister pour votre orientation  ?",
         "Coucou ! Que puis-je faire pour vous en tant que bachelier ou etudiant ?",
@@ -21,7 +20,15 @@
     },
     {
       "tag": "Au_revoir",
-      "patterns": ["Au revoir", "A bientôt", "À la prochaine", "Bye"],
+      "patterns": [
+        "Au revoir",
+        "A bientôt",
+        "À la prochaine",
+        "Merci",
+        "Merci beaucoup",
+        "C'est utile",
+        "Je vous remercie"
+      ],
       "responses": [
         "Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions.",
         "À bientôt ! Si vous avez besoin d'aide, je suis là.",
@@ -29,20 +36,7 @@
         "Bye ! N'hésitez pas à revenir si vous avez besoin d'aide."
       ]
     },
-    {
-      "tag": "Merci",
-      "patterns": [
-        "Merci",
-        "Merci beaucoup",
-        "C'est utile",
-        "Je vous remercie"
-      ],
-      "responses": [
-        "Heureux d'aider !",
-        "Toujours disponible !",
-        "Avec plaisir !"
-      ]
-    },
+
     {
       "tag": "Nouveau Bachelier",
       "patterns": [
@@ -50,7 +44,7 @@
         "Je viens de décrocher mon bac",
         "J'ai eu mon bac",
         "Je suis bachelier",
-        "J'ai réussi mon baccalauréat"
+        "J'ai réussi mon bac"
       ],
       "responses": [
         "Félicitations ! je suis trés heureux pour vous.Quelle série avez-vous faites",
@@ -61,7 +55,7 @@
       "tag": "etudiant",
       "patterns": ["Je suis etudiant"],
       "responses": [
-        "Trés heureux pour vous ! Pouvez vous me donner juste le nom de votre filiere pour plus d'information"
+        "Trés heureux pour vous ! Pouvez-vous me donner juste le nom de votre filiére pour plus d'information"
       ]
     },
     {
@@ -74,7 +68,7 @@
       ],
       "responses": [
         "Il existe plusieurs bourses disponibles pour les étudiants sénégalais. Vous pouvez consulter les opportunités sur le site  de la direction des bourses(à la page d'acceuil de l'application) et sur les sites des universités et écoles supérieures.",
-        "Pour obtenir une bourse d'études, vous devez vérifier les critères spécifiques de chaque programme. Les informations sont souvent publiées sur les plateformes des établissements d'enseignement ou sur le site de l'État."
+        "Pour obtenir une bourse d'études, vous devez vérifier les critères spécifiques de chaque programme. Les informations sont souvent publiées sur les plateformes des établissements d'enseignement ou sur le site de la direction des bourse (à la page d'acceuil de l'application)."
       ]
     },
 
@@ -87,7 +81,7 @@
         "Bac langues et civilisations "
       ],
       "responses": [
-        "Voici quelques domaines d'etudes qui s'offrent à vous :\n-Lettres Modernes\n-Lettres Classiques\n- Langues étrangères appliquées\n- Histoires \n- Geographie \n- Philosophie \n- Economies et gestions \n- Droit. \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations "
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n-Lettres Modernes\n- Langues étrangères appliquées\n- Histoires \n- Geographie \n- Philosophie \n- Economies et gestions \n- Droit. \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations "
       ]
     },
     {
@@ -100,21 +94,12 @@
         "Bac scientifique"
       ],
       "responses": [
-        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Informatique\n- Mathematiques \n- Physique-Chimie \n Medecine \n- Mecanique \n- Agronomie \n- Geographie \n- Biologie \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations"
+        "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Informatique\n- Mathematiques \n- Physique-Chimie \n Medecine \n- Mecanique \n- Agronomie \n- Geographie \n- Biologie \n- Veuillez taper le nom du domaine qui vous intéresse pour plus d'informations"
       ]
     },
     {
       "tag": "Bac_serie_T",
-      "patterns": [
-        "Bac Technique",
-        " T1",
-        " T2",
-        " S3",
-        " S4",
-        " S5",
-        "j'ai un bac T",
-        "Baccalauréat série T"
-      ],
+      "patterns": ["Bac Technique", "j'ai un bac T", "Baccalauréat série T"],
       "responses": [
         "Voici quelques domaines d'etudes qui s'offrent à vous :\n- Mecanique \n- Physique-chimie \n- Informatique \n- Veuillez taper le nom du domaine qui vous interesse pour plus d'informations"
       ]
@@ -251,9 +236,9 @@
     },
 
     {
-      "tag": "medecine",
+      "tag": "medecine_generale",
       "patterns": [
-        "medecine",
+        "la medecine",
         "je veux faire la medecine",
         "parle moi de la medecine",
         "Et pourquoi pas medecine"
@@ -313,7 +298,7 @@
         "Quelle filière devrais-je choisir ?"
       ],
       "responses": [
-        "Le choix de la filière dépend de plusieurs critères : vos préférences personnelles, vos résultats académiques, et les débouchés professionnels que vous envisagez. N'hésitez pas à explorer des domaines qui vous passionnent et à consulter les conseillers d'orientation. Certaines filières peuvent aussi exiger un minimum de note dans certaines matières."
+        "Le choix de la filière dépend de plusieurs critères : vos préférences personnelles, vos résultats académiques, et les débouchés professionnels que vous envisagez. N'hésitez pas à explorer des domaines qui vous passionnent et à consulter les conseillers d'orientation. Certaines filières peuvent aussi exiger un minimum de note dans certaines matières.\n- Puis-je connaitre votre série pour mieux vous aider dans votre orientation"
       ]
     },
 
@@ -351,16 +336,6 @@
       ],
       "responses": [
         "Voici quelques universités privées reconnues par l'ANAQ-Sup au Sénégal :\n\n1. Université Dakar Bourguiba (UDB) : [univdb.sn](http://www.univdb.sn)\n2. Institut Supérieur de Management (ISM) : [ism.edu.sn](http://www.ism.edu.sn)\n3. Université du Sahel : [univdusahel.com](http://www.univdusahel.com)\n4. Institut Africain de Management (IAM) : [iam.sn](http://www.iam.sn)\n5. École Supérieure Polytechnique de Dakar (ESP) : [esp.sn](http://www.esp.sn)\n\nPour garantir que les filières proposées sont reconnues par l'ANAQ-Sup, je recommande de consulter les sites des universités ou de vérifier directement sur le site de l'ANAQ-Sup."
-      ]
-    },
-    {
-      "tag": "Processus_inscription_campusen",
-      "patterns": [
-        "Comment ouvrir un compte sur Campusen",
-        "Inscription sur campusen"
-      ],
-      "responses": [
-        "Pour vous inscrire sur Campusen, suivez ces étapes :\n\n1. Allez sur le site [campusen.sn](http://www.campusen.sn).\n2. Cliquez sur \"Créer un compte\" et suivez les instructions pour remplir le formulaire d'inscription.\n3. Vous recevrez un e-mail de confirmation. Suivez le lien pour activer votre compte.\n4. Une fois connecté, vous pourrez choisir vos filières, vérifier les prérequis et suivre les étapes de candidature.\n\nSi vous avez des questions spécifiques, je suis là pour vous aider !"
       ]
     }
   ]
