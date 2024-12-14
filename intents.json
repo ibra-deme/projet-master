@@ -12,10 +12,10 @@
         "Hey"
       ],
       "responses": [
-        "Salut ! comment puis-je vous aider dans votre orientation?",
-        "Salut ! En quoi puis-je vous assister pour votre orientation  ?",
-        "Coucou ! Que puis-je faire pour vous en tant que bachelier ou etudiant ?",
-        "Hello ! Comment puis-je vous aider aujourd'hui dans votre projet d'etude ?"
+        "Salut ! comment puis-je vous aider dans votre orientation? \n Êtes-vous bachelier ou étudiant ?",
+        "Salut ! En quoi puis-je vous assister pour votre orientation  ?  \n Êtes-vous bachelier ou étudiant ?",
+        "Coucou ! Que puis-je faire pour vous ? Êtes-vous bachelier ou étudiant ? ",
+        "Hello ! Comment puis-je vous aider aujourd'hui dans votre projet d'etude ? \n Êtes-vous bachelier ou étudiant ?"
       ]
     },
     {
@@ -182,7 +182,8 @@
         "Qu'est-ce que la Licence en Lettres Modernes ?",
         "Donne-moi des informations sur les Lettres Modernes à l'UCAD.",
         "Quels sont les débouchés pour la Licence Lettres Modernes ?",
-        "Licence Lettres Modernes"
+        "Licence Lettres Modernes",
+        "Lettres Modernes"
       ],
       "responses": [
         "La formation en Licence de Lettres Modernes quant a elle est disponible qu'à l'Université Cheikh-Anta-Diop (UCAD) est d'une durée de 3 ans, soit 6 semestres. Elle délivre un diplôme de niveau Bac + 3. Cette formation se déroule en présentiel à la Faculté des Lettres et Sciences humaines.\n\nAu cours de cette formation, les étudiants auront l'occasion d'approfondir leurs connaissances en français et en littérature. Ils étudieront des cours tels que la grammaire française, la linguistique, la stylistique, la poésie, le roman, le théâtre, la littérature comparée, etc.\n\n**Débouchés et Métiers accessibles**\n\nA l'issue de la Licence de Lettres Modernes délivrée par l'Université Cheikh-Anta-Diop (UCAD), les étudiants peuvent commencer leur carrière comme:\n\n1. Enseignant de français: Enseigner la langue française et la littérature dans les établissements scolaires.\n2. Éditeur: Participer à la publication et à la diffusion d'ouvrages littéraires et artistiques.\n3. Traducteur: Traduire des textes littéraires et artistiques d'une langue à une autre.\n4. Journaliste culturel: Couvrir des événements culturels et rédiger des articles sur la littérature et les arts.\n5. Responsable de communication: Gérer la communication interne et externe d'une entreprise ou d'une organisation.\n6. Critique littéraire: Analyser et évaluer des œuvres littéraires dans des publications spécialisées.\n\n**Formations complémentaires diplômantes à un niveau supérieur:**\n\n- Master en Lettres Modernes: Approfondir les connaissances en littérature et en linguistique.\n- Master en Éducation: Se spécialiser dans l'enseignement du français et des lettres.\n- Master en Édition: Acquérir des compétences en édition et en gestion de projets éditoriaux.\n- Master en Traduction: Se spécialiser dans la traduction littéraire et artistique.\n- Master en Communication: Approfondir les compétences en communication et en gestion de projets."
@@ -195,7 +196,8 @@
         "Qu'est-ce que le programme en Langues Étrangères Appliquées ?",
         "Donne-moi des informations sur les Langues Étrangères Appliquées",
         "Quels sont les débouchés pour les Langues Étrangères Appliquées ?",
-        "Langues Étrangères Appliquées"
+        "Langues Étrangères Appliquées",
+        "licence Langues Étrangères Appliquées"
       ],
       "responses": [
         "Le programme de formation en Langues Étrangères Appliquées a pour objectif général de former des cadres spécialisés en langues étrangères, capables de contribuer à la satisfaction des besoins de communication des organisations professionnelles.\n\nPlus spécifiquement, il s’agit de former des cadres trilingues ayant une bonne maîtrise des mécanismes et des procédés d’expression orale et écrite des langues étrangères et pouvant les utiliser pour traduire et traiter l’information technique, scientifique et administrative, indispensable à la gestion d´une entreprise moderne.\n\nLa formation en langues étrangères appliquées prépare aux métiers d’interprète, de traducteur, d’assistant, d’enseignant et de médiateur linguistique et culturel dans les domaines :\n\n- des affaires et du commerce international;\n- de l´agro-alimentaire;\n- de l’import/export;\n- de l’industrie;\n- de la banque et des finances;\n- des affaires administratives et publiques;\n- des relations diplomatiques;\n- de la communication.\n\nCette formation est disponible à l'UCAD, à l'UIDT et à l'UGB."
@@ -236,7 +238,7 @@
     },
 
     {
-      "tag": "medecine_generale",
+      "tag": "sante",
       "patterns": [
         "la medecine",
         "je veux faire la medecine",
@@ -323,7 +325,7 @@
         "Universités senegalaise"
       ],
       "responses": [
-        "Voici les principales universités publiques au Sénégal :\n\n1. Université Cheikh Anta Diop de Dakar (UCAD) : [ucad.sn](http://www.ucad.sn)\n2. Université Gaston Berger de Saint-Louis (UGB) : [ugb.sn](http://www.ugb.sn)\n3. Université Alioune Diop de Bambey (UADB) : [uadb.edu.sn](http://www.uadb.edu.sn)\n4. Université Assane Seck de Ziguinchor (UASZ) : [uasz.edu.sn](http://www.uasz.edu.sn)\n5. Université Iba Der Thiam de Thiès (UIDT) : [univ-thies.sn](http://www.univ-thies.sn)\n6. Université Amadou Mahtar Mbow de Dakar (UAM) : [uam.sn](http://www.uam.sn)\n\nCes universités offrent une grande variété de filières. Je vous conseille de consulter leurs sites web pour des informations détaillées et pour vérifier la reconnaissance des filières par l'ANAQ-Sup."
+        "Voici les principales universités publiques au Sénégal :\n\n1. Université Cheikh Anta Diop de Dakar (UCAD) \n2. Université Gaston Berger de Saint-Louis (UGB) \n3. Université Alioune Diop de Bambey (UADB)\n4. Université Assane Seck de Ziguinchor (UASZ) \n5. Université Iba Der Thiam de Thiès (UIDT) \n6. Université Amadou Mahtar Mbow de Dakar (UAM) \n\nCes universités offrent une grande variété de filières. Je vous conseille de consulter leurs sites web pour des informations détaillées et pour vérifier la reconnaissance des filières par l'ANAQ-Sup. \n- Les informations de ces universités sont disponible à la page d'acceuil de cette application"
       ]
     },
     {
@@ -335,7 +337,7 @@
         "Universités privées reconnues par l'ANAQ-Sup"
       ],
       "responses": [
-        "Voici quelques universités privées reconnues par l'ANAQ-Sup au Sénégal :\n\n1. Université Dakar Bourguiba (UDB) : [univdb.sn](http://www.univdb.sn)\n2. Institut Supérieur de Management (ISM) : [ism.edu.sn](http://www.ism.edu.sn)\n3. Université du Sahel : [univdusahel.com](http://www.univdusahel.com)\n4. Institut Africain de Management (IAM) : [iam.sn](http://www.iam.sn)\n5. École Supérieure Polytechnique de Dakar (ESP) : [esp.sn](http://www.esp.sn)\n\nPour garantir que les filières proposées sont reconnues par l'ANAQ-Sup, je recommande de consulter les sites des universités ou de vérifier directement sur le site de l'ANAQ-Sup."
+        "Voici quelques universités privées reconnues par l'ANAQ-Sup au Sénégal :\n\n1. Université Dakar Bourguiba (UDB) \n2. Institut Supérieur de Management (ISM) \n3. Université du Sahel \n4. Institut Africain de Management (IAM) \n5. École Supérieure Polytechnique de Dakar (ESP) \n\nPour garantir que les filières proposées sont reconnues par l'ANAQ-Sup, je recommande de consulter les sites des universités ou de vérifier directement sur le site de l'ANAQ-Sup qui se trouve à la page d'acceuil de l'application."
       ]
     }
   ]
